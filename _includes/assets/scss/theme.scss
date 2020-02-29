@@ -1,0 +1,31 @@
+$text: #444;
+$text-light: #ddd;
+$blue-1: #0af;
+$blue-2: #3bf;
+$blue-3: #6cf;
+$blue-4: #cceeff;
+$yellow-1: #ff9;
+$orange: #FFBB99;
+
+$orange-1: rgb(255,119,0);
+$tan-1:  rgb(247, 211, 170);
+$silver: rgb(212,211,211);
+$green-1: rgb(70,184,52);
+$green-2: rgb(43,146,28);
+
+$c1:#ff6188;
+$c2:#a9dc76;
+$c3:#ffd866;
+$c4:#fc9867;
+$c5:#ab9df2;
+$c6:#78dce8;
+
+
+:root{
+	--black: #{$text};
+	--primary-brand--dark: #{$blue-1};
+  	--primary-brand: #{$blue-2};
+  	--primary-brand--lighter: #{$blue-3};
+  	--primary-brand--lightest: #{$blue-4};
+  	--secondary-brand: #{$yellow-1};
+}

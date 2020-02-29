@@ -1,9 +1,10 @@
 {
-  "title": "Eleventy Netlify Boilerplate",
-  "url": "https://eleventy-netlify-boilerplate.netlify.com",
+  "title": "Scott Weiss - Front End/UI Developer",
+  "url": "https://scottaweiss.com",
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "github": "https://github.com/danurbanowicz"
+    "name": "Scott Weiss",
+    "email": "scott.a.weiss@gmail.com",
+    "github": "https://github.com/scottweiss",
+    "twitter": "@scottweiss"
   }
 }

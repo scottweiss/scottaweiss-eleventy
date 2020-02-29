@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
+const pluginSass = require("eleventy-plugin-sass");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
@@ -8,6 +9,9 @@ module.exports = function(eleventyConfig) {
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(pluginSass, {
+      watch: ['site/**/*.{scss,sass}', '!node_modules/**'],
+    });
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
@@ -36,6 +40,7 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
+  
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {

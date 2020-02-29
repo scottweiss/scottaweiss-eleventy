@@ -1,0 +1,86 @@
+.p-resume{
+	display: contents;
+	display: grid;
+	grid-column-start: 2;
+	max-width:140ch;
+
+	
+	@media (min-width: 1000px), print {
+		grid-template-columns: 3fr 1fr;
+	}	
+
+
+	grid-column-gap: calc(2 * var(--baseline));
+	@media  print {
+		grid-column-gap: var(--gap);
+	}	
+	&__skillset{
+		@media (min-width: 1000px), print {
+		   grid-column-start: 2;
+		}	
+		@media  print {
+			h1{
+			   font-size: 1.125em; 
+			}
+		}
+		 
+    grid-row-start: 1;
+    // grid-row-end: -1;
+	}
+	&__job{
+		 grid-column-start: 1;
+		 margin-bottom: var(--baseline);
+		 break-inside: avoid;
+		 @media  print {
+		   margin-bottom: 0;
+		}	
+	}
+	&__employer{
+		margin-bottom: 0px;
+		span{
+			font-size: 0.5em;
+		}
+
+	}
+	&__role{
+		font-size: 24px;
+		// line-height:42px;
+		margin-bottom: 0px;
+			@media  print {
+		   font-size: 1rem; 
+		   margin-bottom: 0.25rem;
+		}	
+
+
+	}
+	&__duration{
+		font-size: 14px;
+		color: #555;
+		@media  print {
+		   margin-bottom: .5rem;
+		   color: #333;
+		}	
+	}
+	&__skills{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__list{
+		display: inline-block;
+		&-heading{
+			font-weight: bold;
+			font-size: 1.25em; 
+			@media  print {
+			   font-size: 1em; 
+			}
+		}
+	}
+	&__icon{
+		// font-size: 12px;
+		margin-right: 4px;
+		 @media  print {
+		  display: none;
+		}	
+	}
+}

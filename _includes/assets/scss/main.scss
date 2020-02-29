@@ -1,0 +1,180 @@
+// @import '../css/inline.scss'; 
+// @import '../css/resume.scss'; 
+
+// @import '../css/hero.scss'; 
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'theme.scss';
+// @import 'font';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body{
+// background-image: url('/img/memphis-mini.png');  
+ color: $text;
+  font-family: 'eina', 'Helvetica Neue', 'Alegreya Sans', 'Nunito Sans', 'Quattrocento Sans', cursive, sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'eina', 'Helvetica Neue', 'Alegreya Sans', 'Nunito Sans', 'Quattrocento Sans', cursive, sans-serif;
+}
+
+.d-block{display: block;}
+.p-relative{position: relative;}
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+  ),
+  $spacers
+);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @each $size, $length in $spacers {
+        .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+        .#{$abbrev}t-#{$size},
+        .#{$abbrev}y-#{$size} {
+          #{$prop}-top: $length !important;
+        }
+        .#{$abbrev}r-#{$size},
+        .#{$abbrev}x-#{$size} {
+          #{$prop}-right: $length !important;
+        }
+        .#{$abbrev}b-#{$size},
+        .#{$abbrev}y-#{$size} {
+          #{$prop}-bottom: $length !important;
+        }
+        .#{$abbrev}l-#{$size},
+        .#{$abbrev}x-#{$size} {
+          #{$prop}-left: $length !important;
+        }
+      }
+    }
+
+    .logo{
+      height: 4EM;
+    width: 4em;
+    line-height: 4.2em;
+    border-radius: 50%;
+    color: #fff;
+    background: #333;
+    text-align: center;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background: $c1;
+    }
+    .logo-3{
+      height: auto;
+      line-height: 1;
+      padding: 0.5em;
+      border-radius: .25em;
+      margin-bottom: 10px;
+    }
+    .logo-4{
+      height: auto;
+      line-height: 1;
+      padding: 0.5em;
+      border-radius: .25em;
+      background: $text;
+      color: #FFF;
+      font-weight: 900;
+      i{
+        // color: $c3;
+      }
+    }
+
+@import 'type.scss';
+@import './patterns/nav.scss';
+@import './patterns/hero.scss';
+
+@import 'card.scss';
+// @import 'landing.scss';
+// @import 'hero.scss';
+@import './objects/page.scss';
+@import './objects/post.scss';
+
+@import 'resume.scss';
+
+.d-none{
+  display: none;
+}
+
+@media print {
+  ::root{
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  h1{ font-size: 1.5rem; line-height: 1.2; margin-bottom: 0;}
+  h2{ font-size: 1.25rem; line-height: 1.2;}
+  p,ul,li{
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+}

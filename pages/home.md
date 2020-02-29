@@ -7,14 +7,31 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
-
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+<header class="o-page__header p-hero">
+    <ul class="p-hero__list">
+      <li>Design Systems</li>
+      <li>Accessibility</li>
+      <li>Progressive Enhancement</li>
+      <li>Responsive Design</li>
+      <li>Style Architecture</li>
+    </ul>
+     <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
+</header>
+<a href="/about" class=" o-post  c-card" alt="See my portfolio">
+	<header class="o-post__header">
+                <h2>Portfolio</h2>
+                <p class="m-0">Work that I'm proud of; a mix of professional work and personal projects</p>
+              </header>
+</a>
+           
+ <!--            <Link to='/portfolio' className=" o-post  c-card">
+              <header class="o-post__header">
+                <h2>Portfolio</h2>
+                <p className="m-0">Work that I'm proud of; a mix of professional work and personal projects</p>
+              </header>
+              <LandingSection class="o-post__header__backdrop o-post__header__backdrop--1" id="confit-portfolio"  colors={[[ 171, 157, 242], [255, 97, 136]]} shapes={["circle"]}></LandingSection>
+              <LandingSection class="o-post__header__backdrop o-post__header__backdrop--2" max="13" size="2" id="confit-portfolio-2"  clock="-1" colors={[[255, 216, 102]]} shapes={["circle"]}></LandingSection>
+            </Link> -->
+  
