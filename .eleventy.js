@@ -1,17 +1,23 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
-const pluginSass = require("eleventy-plugin-sass");
+
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
+const pluginSEO = require("eleventy-plugin-seo");
+const pluginPWA = require("eleventy-plugin-pwa");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-
+  eleventyConfig.addPlugin(pluginSEO, {
+  title: "Scott Weiss - Front End/UI Developer",
+  description: "Scotts placegolder for now",
+  url: "https://scottaweiss.com",
+  author: "Scott Weiss",
+  author: "username"
+});
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(pluginSass, {
-      watch: ['site/**/*.{scss,sass}', '!node_modules/**'],
-    });
+  eleventyConfig.addPlugin(pluginPWA);
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 

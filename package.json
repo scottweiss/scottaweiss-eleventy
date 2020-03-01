@@ -30,12 +30,14 @@
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.4",
     "clean-css": "^4.2.1",
+    "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-sass": "^1.0.0",
-    "html-minifier": "^4.0.0",
-    "uglify-es": "^3.3.9",
+    "eleventy-plugin-seo": "^0.5.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "html-minifier": "^4.0.0",
+    "uglify-es": "^3.3.9"
   }
 }
