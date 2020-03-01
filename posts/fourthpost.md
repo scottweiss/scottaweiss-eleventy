@@ -1,10 +1,11 @@
 ---
-title: This is my fourth post
-summary: Why contemplating our mortality can be a powerful catalyst for change
+title: TODO
+summary: a list of things i need to do for this site
 date: 2017-02-03
 tags:
-  - post
-  - environment
-  - politics
+  - meta
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+* correct layout issues from gatsby -> eleventy port
+* get favicon / apple touch icon
+* correct layout isssues on resume page
+* style and correct contact page

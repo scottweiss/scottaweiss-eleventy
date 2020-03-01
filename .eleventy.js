@@ -11,9 +11,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSEO, {
   title: "Scott Weiss - Front End/UI Developer",
   description: "Scotts placegolder for now",
-  url: "https://awesome-brahmagupta-d0034e.netlify.com",
-  author: "Scott Weiss",
-  author: "username"
+  url: "https://scottaweiss.com",
+  author: "Scott Weiss"
 });
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
