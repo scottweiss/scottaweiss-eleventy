@@ -19,12 +19,12 @@ eleventyNavigation:
     </ul>
      <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
 </header>
-<a href="/about" class=" o-post  c-card" alt="See my portfolio">
+<div class=" o-post  c-card" >
 	<header class="o-post__header">
-                <h2>Portfolio</h2>
+                <h2><a href="/about">Portfolio</a></h2>
                 <p class="m-0">Work that I'm proud of; a mix of professional work and personal projects</p>
               </header>
-</a>
+</div>
            
  <!--            <Link to='/portfolio' className=" o-post  c-card">
               <header class="o-post__header">

@@ -1,6 +1,6 @@
 .o-page{
 	$self: &;
-	max-width:2000px;
+	// max-width:2000px;
 	margin: 0 auto;
 	display: grid; 
 	grid-template-columns: auto;
@@ -54,14 +54,14 @@
 		position: relative;
 		overflow: hidden;    
 		padding:  var(--baseline) var(--gap);
-		    margin-left: calc(-1 * var(--gap));
-		        margin-right: calc(-1 * var(--gap));
+		margin-left: calc(-1 * var(--baseline));
+		margin-right: calc(-1 * var(--baseline));
 
 	
 		@media (min-width: 768px) {
-			padding: calc(2 * var(--baseline));
-			  margin-left: calc(-1 * var(--gap));
-		        margin-right: calc(-1 * var(--gap));
+			// padding: calc(2 * var(--baseline));
+			//   margin-left: calc(-1 * var(--gap));
+		 //        margin-right: calc(-1 * var(--gap));
 
 		}
 		&-content{
