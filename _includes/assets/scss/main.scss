@@ -10,7 +10,8 @@
    License: none (public domain)
 */
 @import 'theme.scss';
-// @import 'font';
+@import 'font.scss';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -69,12 +70,12 @@ table {
 
 body{
 // background-image: url('/img/memphis-mini.png');  
- color: $text;
-  font-family: 'eina', 'Helvetica Neue', 'Alegreya Sans', 'Nunito Sans', 'Quattrocento Sans', cursive, sans-serif;
+color: $text;
+font-family: 'Eina', 'Helvetica Neue', 'Alegreya Sans', 'Nunito Sans', 'Quattrocento Sans', cursive, sans-serif;
 
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'eina', 'Helvetica Neue', 'Alegreya Sans', 'Nunito Sans', 'Quattrocento Sans', cursive, sans-serif;
+    font-family: 'Eina', 'Helvetica Neue', 'Alegreya Sans', 'Nunito Sans', 'Quattrocento Sans', cursive, sans-serif;
 }
 
 .d-block{display: block;}
@@ -149,7 +150,7 @@ $spacers: map-merge(
       }
     }
 
-@import 'type.scss';
+
 @import './patterns/nav.scss';
 @import './patterns/hero.scss';
 

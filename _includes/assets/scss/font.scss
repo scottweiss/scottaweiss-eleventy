@@ -1,9 +1,5 @@
-
-$fontsDir: '/font/';
+$fontsDir: '/assets/static/font/';
 $einaDir: $fontsDir + 'eina/';
-
-
-
 
 @font-face {
   font-family: 'Eina';
@@ -13,8 +9,9 @@ $einaDir: $fontsDir + 'eina/';
        url($einaDir + 'eina-01-bold.eot?#iefix') format('eot');
   font-weight: 700;
   unicode-range: U+000-5FF;
-  font-display: auto;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'Eina';
   src: url($einaDir + 'eina-01-semibold.woff2') format('woff2'),
@@ -23,8 +20,9 @@ $einaDir: $fontsDir + 'eina/';
        url($einaDir + 'eina-01-semibold.eot?#iefix') format('eot');
   font-weight: 600;
   unicode-range: U+000-5FF;
-   font-display: auto;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'Eina';
   src: url($einaDir + 'eina-01-regular.woff2') format('woff2'),
@@ -33,6 +31,5 @@ $einaDir: $fontsDir + 'eina/';
        url($einaDir + 'eina-01-regular.eot?#iefix') format('eot');
   font-weight: 400;
   unicode-range: U+000-5FF;
-   font-display: auto;
+  font-display: swap;
 }
-
