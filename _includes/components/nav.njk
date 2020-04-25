@@ -1,7 +1,7 @@
-<nav class="p-nav">
+<nav class="p-nav py-3">
   {% set navPages = collections.all | eleventyNavigation %}
   {%- for entry in navPages %}
-      <a class="p-nav__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+      <a class="p-nav__link px-3" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
   {%- endfor %}
 
 </nav>

@@ -9,15 +9,12 @@ eleventyNavigation:
 ---
 
 
-<header class="o-page__header p-hero">
-    <ul class="p-hero__list">
-      <li>Design Systems</li>
-      <li>Accessibility</li>
-      <li>Progressive Enhancement</li>
-      <li>Responsive Design</li>
-      <li>Style Architecture</li>
-    </ul>
+<header class="o-page__header p-hero py-5">
      <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
+       <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
+         <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
+           <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
+             <p class="">Scott Weiss is a Front-End/UI Developer (and amateur leatherworker) currently based in Portland, Oregon</p>
 </header>
 <div class="o-post  c-card c-card--link" ><h2><a class="c-card__link" href="/about">About</a></h2>
                 <p class="m-0">What's going on with me and this site?</p>

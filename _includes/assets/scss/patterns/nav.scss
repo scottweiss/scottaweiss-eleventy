@@ -4,13 +4,16 @@
 	// padding-left: var(--baseline);
 	// padding-right: var(--baseline);
 	display: flex;
-	position: sticky;
+	position: fixed;
     background: rgba(255,255,255,0.5);
     // width: 100%;
     z-index: 1;
     top: 0;
+    left: 0;
+    right: 0;
     backdrop-filter: blur(4px);
     list-style: none;
+
     &__list{
     	display: block;
     }

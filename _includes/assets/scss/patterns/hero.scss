@@ -1,8 +1,9 @@
 $p-hero--background: --primary-brand--lighter;
 
 .p-hero{
-	background: var($p-hero--background);
 
+	background: var($p-hero--background);
+	
 	&__list{
 		// @include poly-fluid-sizing("font-size", type-scale(4));
 		list-style: none;
