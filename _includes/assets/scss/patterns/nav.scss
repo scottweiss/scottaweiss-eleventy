@@ -4,13 +4,12 @@
 	// padding-left: var(--baseline);
 	// padding-right: var(--baseline);
 	display: flex;
-	position: fixed;
+	position: sticky;
     background: rgba(255,255,255,0.5);
     // width: 100%;
     z-index: 1;
     top: 0;
-    left: 0;
-    right: 0;
+   
     backdrop-filter: blur(4px);
     list-style: none;
 
@@ -34,7 +33,7 @@
 			// border-bottom: dotted $text calc(0.125 * var(--gap));
 		}
 		&[data-current="current item"]{
-			// border-bottom: solid $text calc(0.0675 * var(--gap));
+			border-bottom: solid $text 2px;
 			font-weight: bold;
 
 		}
