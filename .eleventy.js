@@ -10,7 +10,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSEO, {
   title: "Scott Weiss - Front End/UI Developer",
-  description: "Scotts placegolder for now",
+  description: "Scotts placeholder for now",
   url: "https://scottaweiss.com",
   author: "Scott Weiss"
 });
@@ -78,6 +78,7 @@ module.exports = function(eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");
+  // eleventyConfig.addPassthroughCopy("static/font");
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
