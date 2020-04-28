@@ -10,9 +10,9 @@
 	}	
 
 
-	grid-column-gap: calc(2 * var(--baseline));
+	// grid-column-gap: calc(2 * var(--baseline));
 	@media  print {
-		grid-column-gap: var(--gap);
+		// grid-column-gap: var(--gap);
 	}	
 	&__skillset{
 		@media (min-width: 1000px), print {
@@ -29,7 +29,7 @@
 	}
 	&__job{
 		 grid-column-start: 1;
-		 margin-bottom: var(--baseline);
+		 // margin-bottom: var(--baseline);
 		 break-inside: avoid;
 		 @media  print {
 		   margin-bottom: 0;
