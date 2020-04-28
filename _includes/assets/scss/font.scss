@@ -1,12 +1,13 @@
 $fontsDir: '/static/font/';
 $einaDir: $fontsDir + 'eina/';
 
+
 @font-face {
   font-family: 'Eina';
-  src: url($einaDir + 'eina-01-bold.woff2') format('woff2'),
-       url($einaDir + 'eina-01-bold.woff') format('woff'),
-       url($einaDir + 'eina-01-bold.ttf') format('ttf'),
-       url($einaDir + 'eina-01-bold.eot?#iefix') format('eot');
+  src: url($einaDir + 'eina-03-bold.woff2') format('woff2'),
+       url($einaDir + 'eina-03-bold.woff') format('woff'),
+       url($einaDir + 'eina-03-bold.ttf') format('ttf'),
+       url($einaDir + 'eina-03-bold.eot?#iefix') format('eot');
   font-weight: 700;
   unicode-range: U+000-5FF;
   font-display: swap;
@@ -14,10 +15,10 @@ $einaDir: $fontsDir + 'eina/';
 
 @font-face {
   font-family: 'Eina';
-  src: url($einaDir + 'eina-01-semibold.woff2') format('woff2'),
-       url($einaDir + 'eina-01-semibold.woff') format('woff'),
-       url($einaDir + 'eina-01-semibold.ttf') format('ttf'),
-       url($einaDir + 'eina-01-semibold.eot?#iefix') format('eot');
+  src: url($einaDir + 'eina-03-semibold.woff2') format('woff2'),
+       url($einaDir + 'eina-03-semibold.woff') format('woff'),
+       url($einaDir + 'eina-03-semibold.ttf') format('ttf'),
+       url($einaDir + 'eina-03-semibold.eot?#iefix') format('eot');
   font-weight: 600;
   unicode-range: U+000-5FF;
   font-display: swap;
@@ -25,10 +26,10 @@ $einaDir: $fontsDir + 'eina/';
 
 @font-face {
   font-family: 'Eina';
-  src: url($einaDir + 'eina-01-regular.woff2') format('woff2'),
-       url($einaDir + 'eina-01-regular.woff') format('woff'),
-       url($einaDir + 'eina-01-regular.ttf') format('ttf'),
-       url($einaDir + 'eina-01-regular.eot?#iefix') format('eot');
+  src: url($einaDir + 'eina-03-regular.woff2') format('woff2'),
+       url($einaDir + 'eina-03-regular.woff') format('woff'),
+       url($einaDir + 'eina-03-regular.ttf') format('ttf'),
+       url($einaDir + 'eina-03-regular.eot?#iefix') format('eot');
   font-weight: 400;
   unicode-range: U+000-5FF;
   font-display: swap;

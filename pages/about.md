@@ -1,21 +1,30 @@
 ---
-title: About Scott
+title: This is a very long title that should wrap at some point but it's just here for now
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 
 ---
-# Ipse tales
 
-## Populos gradus velamina
+## There are lots of things I need to do
 
-Lorem markdownum exterrita [Procnen](http://verum.io/prospicit) enim tollens
+I need some placeholder text here to fill out space so the following is a bunch of Lorem markdownum exterrita [Procnen](http://verum.io/prospicit) enim tollens
 sociantem miseris adeunt trementi. Pectus de externa iterumque sparsae
 conspectos tamen, iam abiit, rector meliora sentit adiciunt Isi sociis bibit et.
 Manu qui, meos vultus, illa cui Amyclide non color illa opemque cupit.
 
+The following is an ordered list
+
 1. Clamor Crantoris dixit
 2. Litus satis femineo
 3. Pectebant salus draconem meque at amictus demisso
+
+Wasnt that exciting?
+Get ready for this unordered list wow!
+
+* one thing
+* two things
+* red things
+* blue thigns
 
 Dabant ridet cruciatibus flabat adsuerant resoluta comites, insidiosa formasque
 sine poscit. Erat undas Iovis sublimes montes pugnat manu bello cupit, tu tempto
