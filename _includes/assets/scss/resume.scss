@@ -3,7 +3,9 @@
 	display: grid;
 	grid-column-start: 2;
 	max-width:140ch;
-
+	 // h1{
+	 // 	border-bottom: 4px solid red;
+	 // }
 	
 	@media (min-width: 1000px), print {
 		grid-template-columns: 3fr 1fr;

@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 
+const purgeStyles = require('./utils/purge-css');
+
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const pluginSEO = require("eleventy-plugin-seo");
@@ -59,12 +61,18 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  if (process.env.ELEVENTY_ENV === 'production') {
+    eleventyConfig.addTransform('purge-styles', purgeStyles);
+  }
+
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getAllSorted().filter(function(item) {
       return item.inputPath.match(/^\.\/posts\//) !== null;
     });
   });
+
+  // eleventyConfig.addWatchTarget('_includes/assets/scss/**/*');
 
   // Universal slug filter strips unsafe chars from URLs
   eleventyConfig.addFilter("slugify", function(str) {
