@@ -14,7 +14,7 @@ eleventyNavigation:
   <p class="p-hero__p">Scott Weiss is a Front-End/UI Developer and amateur leatherworker based in Portland, Oregon</p>
   <p class="p-hero__p">I'm currently preoccupied with Animal Crossing but expect big things soon.</p>
   <p class="p-hero__p">
-    <a href="///www.linkedin.com/in/weissscott/" target="_blank">In the meantime you can contact me here.</a>
+    <a href="///www.linkedin.com/in/weissscott/" target="_blank" rel="noreferrer">In the meantime you can contact me here.</a>
   </p>
        
 </header>
