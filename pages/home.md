@@ -11,8 +11,11 @@ eleventyNavigation:
 
 <header class="o-page__header p-hero py-5">
   <h1>Scott<br>Weiss</h1>
-  <p class="p-hero__p">Scott Weiss is a Front-End/UI Developer and amateur leatherworker currently based in Portland, Oregon</p>
-  <p class="p-hero__p">Currently preoccupied with Animal Crossing but expect big things soon.</p>
+  <p class="p-hero__p">Scott Weiss is a Front-End/UI Developer and amateur leatherworker based in Portland, Oregon</p>
+  <p class="p-hero__p">I'm currently preoccupied with Animal Crossing but expect big things soon.</p>
+  <p class="p-hero__p">
+    <a href="///www.linkedin.com/in/weissscott/" target="_blank">In the meantime you can contact me here.</a>
+  </p>
        
 </header>
 <!-- <div class="o-post  c-card c-card--link" ><h2><a class="c-card__link" href="/about">About</a></h2>
