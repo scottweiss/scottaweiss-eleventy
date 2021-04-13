@@ -6,11 +6,11 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@11ty/dependency-tree/-/dependency-tree-1.0.0.tgz#b1fa53da49aafe0ab3fe38bc6b6058b704aa59a1"
 
-"@11ty/eleventy-navigation@^0.1.5":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-navigation/-/eleventy-navigation-0.1.6.tgz#26c1880494b99dd961efa51bdf866485a0adddde"
+"@11ty/eleventy-navigation@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-navigation/-/eleventy-navigation-0.2.0.tgz#fd610a4a3d52934b54832be5268dddf4b2fd22f4"
   dependencies:
-    dependency-graph "^0.8.1"
+    dependency-graph "^0.11.0"
 
 "@11ty/eleventy@^0.11.1":
   version "0.11.1"
@@ -1260,9 +1260,9 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
-dependency-graph@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/dependency-graph/-/dependency-graph-0.8.1.tgz#9b8cae3aa2c7bd95ccb3347a09a2d1047a6c3c5a"
+dependency-graph@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/dependency-graph/-/dependency-graph-0.11.0.tgz#ac0ce7ed68a54da22165a85e97a01d53f5eb2e27"
 
 dependency-graph@^0.9.0:
   version "0.9.0"
