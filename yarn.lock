@@ -3804,9 +3804,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
-purgecss@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-4.0.2.tgz#7281f233c08b4f41e1c5d85c66a2d064e6d7e1b3"
+purgecss@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-4.0.3.tgz#8147b429f9c09db719e05d64908ea8b672913742"
   dependencies:
     commander "^6.0.0"
     glob "^7.0.0"
