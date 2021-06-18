@@ -6,9 +6,9 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@11ty/dependency-tree/-/dependency-tree-1.0.0.tgz#b1fa53da49aafe0ab3fe38bc6b6058b704aa59a1"
 
-"@11ty/eleventy-navigation@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-navigation/-/eleventy-navigation-0.2.0.tgz#fd610a4a3d52934b54832be5268dddf4b2fd22f4"
+"@11ty/eleventy-navigation@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-navigation/-/eleventy-navigation-0.3.2.tgz#dfbadf3719c9478f684a7431a7fd4ca8cfb223e1"
   dependencies:
     dependency-graph "^0.11.0"
 
