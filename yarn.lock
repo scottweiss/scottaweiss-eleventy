@@ -1349,9 +1349,9 @@ eleventy-plugin-sass@^1.0.0:
     map-stream "^0.0.7"
     vinyl-fs "^3.0.3"
 
-eleventy-plugin-seo@^0.5.0:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-seo/-/eleventy-plugin-seo-0.5.1.tgz#d7e44ff7e2944ff56a86e1c303eb50e1db4c507f"
+eleventy-plugin-seo@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-seo/-/eleventy-plugin-seo-0.5.2.tgz#37f1589b678de21e122d2b3f39d84f6457de1985"
   dependencies:
     html-entities "^1.2.1"
     lodash "^4.17.19"
