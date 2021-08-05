@@ -32,7 +32,7 @@
     "clean-css": "^5.1.5",
     "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-sass": "^1.0.0",
-    "eleventy-plugin-seo": "^0.5.0",
+    "eleventy-plugin-seo": "^0.5.2",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",
