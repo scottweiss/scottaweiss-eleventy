@@ -2878,9 +2878,9 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-it-anchor@^8.0.5:
-  version "8.0.5"
-  resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-8.0.5.tgz#1f45e93fee9ddec30608296d9cd34ebe76d356f5"
+markdown-it-anchor@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-8.1.2.tgz#1f26b102005cb7750d5159d06ba3cfa9400ebc3d"
 
 markdown-it@^10.0.0:
   version "10.0.0"
