@@ -16,7 +16,6 @@ eleventyNavigation:
   <p class="p-hero__p">
     <a href="///www.linkedin.com/in/weissscott/" target="_blank" rel="noreferrer">In the meantime you can contact me here.</a>
   </p>
-       
 </header>
 <!-- <div class="o-post  c-card c-card--link" ><h2><a class="c-card__link" href="/about">About</a></h2>
                 <p class="m-0">What's going on with me and this site?</p>
