@@ -13,7 +13,7 @@
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
-  {% seo "" %}
+
   <script>
  if ("serviceWorker" in navigator) {
     navigator.serviceWorker
@@ -24,6 +24,6 @@
       .catch(console.error);
   }
 </script> 
-<script data-ad-client="ca-pub-1522460283493349" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <link rel="manifest" href="/manifest.json" />
 </head>
