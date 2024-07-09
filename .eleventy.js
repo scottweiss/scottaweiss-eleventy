@@ -1,26 +1,41 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
-
-const purgeStyles = require('./utils/purge-css');
-
-const UglifyJS = require("uglify-es");
+const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
-const pluginSEO = require("eleventy-plugin-seo");
-const pluginPWA = require("eleventy-plugin-pwa");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(pluginSEO, {
-  title: "Scott Weiss - Front End/UI Developer",
-  description: "Scotts placeholder for now",
-  url: "https://scottaweiss.com",
-  author: "Scott Weiss"
-});
+
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(pluginPWA);
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
+  // layout aliases! Say you have a bunch of existing content using
+  // layout: post. If you don’t want to rewrite all of those values, just map
+  // post to a new file like this:
+  // eleventyConfig.addLayoutAlias("post", "layouts/my_new_post_layout.njk");
+
+  // Merge data instead of overriding
+  // https://www.11ty.dev/docs/data-deep-merge/
+  eleventyConfig.setDataDeepMerge(true);
+
+  // Add support for maintenance-free post authors
+  // Adds an authors collection using the author key in our post frontmatter
+  // Thanks to @pdehaan: https://github.com/pdehaan
+  eleventyConfig.addCollection("authors", collection => {
+    const blogs = collection.getFilteredByGlob("posts/*.md");
+    return blogs.reduce((coll, post) => {
+      const author = post.data.author;
+      if (!author) {
+        return coll;
+      }
+      if (!coll.hasOwnProperty(author)) {
+        coll[author] = [];
+      }
+      coll[author].push(post.data);
+      return coll;
+    }, {});
+  });
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -47,7 +62,6 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
-  
   // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {
@@ -61,35 +75,12 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  if (process.env.ELEVENTY_ENV === 'production') {
-    eleventyConfig.addTransform('purge-styles', purgeStyles);
-  }
-
-  // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
-  });
-
-  // eleventyConfig.addWatchTarget('_includes/assets/scss/**/*');
-
-  // Universal slug filter strips unsafe chars from URLs
-  eleventyConfig.addFilter("slugify", function(str) {
-    return slugify(str, {
-      lower: true,
-      replacement: "-",
-      remove: /[*+~.·,()'"`´%!?¿:@]/g
-    });
-  });
-
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("static");
-
-  eleventyConfig.addPassthroughCopy("manifest.json");
-  eleventyConfig.addPassthroughCopy("admin");
-
+  eleventyConfig.addPassthroughCopy("static/img");
+  eleventyConfig.addPassthroughCopy("admin/");
+  // We additionally output a copy of our CSS for use in Decap CMS previews
+  eleventyConfig.addPassthroughCopy("_includes/assets/css/inline.css");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
@@ -108,7 +99,7 @@ module.exports = function(eleventyConfig) {
   );
 
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
+    templateFormats: ["md", "njk", "liquid"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
