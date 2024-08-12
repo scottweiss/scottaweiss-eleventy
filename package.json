@@ -29,6 +29,6 @@
     "html-minifier": "^4.0.0",
     "luxon": "^3.5.0",
     "markdown-it-anchor": "^9.0.1",
-    "uglify-js": "^3.19.1"
+    "uglify-js": "^3.19.2"
   }
 }
