@@ -38,12 +38,12 @@
     urlpattern-polyfill "^10.0.0"
     ws "^8.18.0"
 
-"@11ty/eleventy-navigation@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.npmjs.org/@11ty/eleventy-navigation/-/eleventy-navigation-0.3.5.tgz"
-  integrity sha512-4aKW5aIQDFed8xs1G1pWcEiFPcDSwZtA4IH1eERtoJ+Xy+/fsoe0pzbDmw84bHZ9ACny5jblENhfZhcCxklqQw==
+"@11ty/eleventy-navigation@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-navigation/-/eleventy-navigation-1.0.3.tgz#4334c9dc937644608cc42cc28b08cecf665c875f"
+  integrity sha512-E0E3AFvNsgYThDmalgBnDRoeIwAfAaxLAA0EvUVANRj5IxqZF/c3+o2zuS54EbG25zXA2TeoKKt1WVsTCLJRmw==
   dependencies:
-    dependency-graph "^0.11.0"
+    dependency-graph "^1.0.0"
 
 "@11ty/eleventy-plugin-bundle@^3.0.0":
   version "3.0.0"
